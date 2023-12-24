@@ -45,3 +45,11 @@ C:\Users\Usuario\Desktop\DotNETProjects\HealthcareApp\HealthcareAppBackend\API\b
 C:\Users\Usuario\Desktop\DotNETProjects\HealthcareApp\HealthcareAppBackend\API\bin\Debug\net7.0\Npgsql.dll
 C:\Users\Usuario\Desktop\DotNETProjects\HealthcareApp\HealthcareAppBackend\API\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Usuario\Desktop\DotNETProjects\HealthcareApp\HealthcareAppBackend\API\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\Usuario\Desktop\DotNETProjects\HealthcareApp\HealthcareAppBackend\API\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Usuario\Desktop\DotNETProjects\HealthcareApp\HealthcareAppBackend\API\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Usuario\Desktop\DotNETProjects\HealthcareApp\HealthcareAppBackend\API\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Usuario\Desktop\DotNETProjects\HealthcareApp\HealthcareAppBackend\API\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Usuario\Desktop\DotNETProjects\HealthcareApp\HealthcareAppBackend\API\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Usuario\Desktop\DotNETProjects\HealthcareApp\HealthcareAppBackend\API\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Usuario\Desktop\DotNETProjects\HealthcareApp\HealthcareAppBackend\API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Usuario\Desktop\DotNETProjects\HealthcareApp\HealthcareAppBackend\API\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
