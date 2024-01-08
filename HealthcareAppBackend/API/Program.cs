@@ -1,4 +1,5 @@
 using API.Extensions;
+using API.Middleware;
 using Data;
 using Data.Interfaces;
 using Data.Services;
@@ -22,6 +23,11 @@ builder.Services.AddServicesIdentityCollection(builder.Configuration);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
+app.UseMiddleware<ExceptionMiddleware>();
+app.UseStatusCodePagesWithReExecute("/errors/{0}");
+
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
