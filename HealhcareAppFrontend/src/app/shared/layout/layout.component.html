@@ -1,1 +1,43 @@
-<p>layout works!</p>
+<mat-toolbar color="primary" style="background: rgb(5, 28, 128);">
+    <span>Healthcare App</span>
+    <button mat-icon-button (click)="sidenav.toggle();">
+      <mat-icon>menu</mat-icon>
+    </button>
+  
+    <span style="flex: 1 1 auto;;"></span>
+    <label style="font-size: 14px; margin-right: 20px;">{{username}}</label>
+    <button mat-icon-button (click)="logOut();">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+  
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav opened mode="side" style="width: 220px; background: rgb(28, 57, 189);">
+      <mat-nav-list>
+        <mat-list-item routerLink="/layout/dashboard">
+          <mat-icon matListItemIcon style="color: white;">dashboard</mat-icon>
+          <div matListItemTitle style="color: white;">Dashboard</div>
+        </mat-list-item>
+        <mat-list-item routerLink="/layout/specialties">
+          <mat-icon matListItemIcon style="color: white;">category</mat-icon>
+          <div matListItemTitle style="color: white;">Specialties</div>
+        </mat-list-item>
+        <mat-list-item routerLink="/layout/doctors">
+          <mat-icon matListItemIcon style="color: white;">group_add</mat-icon>
+          <div matListItemTitle style="color: white;">Doctors</div>
+        </mat-list-item>
+        <mat-list-item routerLink="/layout/users">
+          <mat-icon matListItemIcon style="color: white;">person</mat-icon>
+          <div matListItemTitle style="color: white;">Users</div>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <div style="height: 90vh;">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  
+  </mat-sidenav-container>
+

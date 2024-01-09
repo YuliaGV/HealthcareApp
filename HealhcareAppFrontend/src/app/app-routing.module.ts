@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './user/login/login.component';
-import { LayoutComponent } from './shared/layout/layout.component';
+
 
 const routes: Routes = [
   {
-    path: '', 
+    path: 'login', 
     component: LoginComponent, 
     pathMatch: 'full'
   },
   {
-    path: 'login', 
+    path: 'layout', // layout/dashboard , layout/doctors
+    loadChildren: () =>
+      import('./shared/shared.module').then((m) => m.SharedModule),
+  },
+  {
+    path: '', 
     component: LoginComponent, 
     pathMatch: 'full'
   },
@@ -19,11 +24,6 @@ const routes: Routes = [
     redirectTo: '',
     pathMatch: 'full'
   },
-  {
-    path: 'layout',
-    component: LayoutComponent,
-    pathMatch: 'full'
-  }
 ];
 
 @NgModule({
